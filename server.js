@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 const mongoClient = require('mongodb').MongoClient;
 const config = require('./config');
 const app = express();
-const port = 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -18,4 +17,4 @@ mongoose.connect(config.NODE_SERVER).then((data) => {
     console.log(error);
 });
 
-app.listen(3000);
+app.listen(5000);
